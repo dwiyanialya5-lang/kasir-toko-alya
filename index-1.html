@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alya Stationery | Kasir Toko Kelontong</title>
+<style>
+:root{--bg:#f5f7fb;--surface:#fff;--text:#172033;--muted:#687386;--primary:#2563eb;--primary2:#1d4ed8;--line:#e5eaf2;--danger:#dc2626;--green:#15803d;--shadow:0 8px 24px rgba(24,39,75,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}button,input,select{font:inherit}button{cursor:pointer}.app{max-width:1180px;margin:auto;padding:18px 18px 100px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:15px;background:#dbeafe;display:grid;place-items:center;font-size:25px}.brand h1{font-size:20px;margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:12px}.top-actions{display:flex;gap:8px}.btn{border:0;border-radius:11px;padding:11px 14px;background:var(--primary);color:white;font-weight:650}.btn:hover{background:var(--primary2)}.btn.secondary{background:var(--surface);color:var(--text);border:1px solid var(--line)}.btn.danger{background:var(--danger)}.btn.small{padding:7px 10px;font-size:13px}.tabs{display:flex;gap:8px;margin-bottom:16px;overflow:auto}.tab{border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:10px 15px;border-radius:12px;font-weight:650;white-space:nowrap}.tab.active{background:#dbeafe;color:#1d4ed8;border-color:#bfdbfe}.layout{display:grid;grid-template-columns:minmax(0,1fr) 350px;gap:18px;align-items:start}.panel{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}.panel h2{font-size:17px;margin:0 0 13px}.toolbar{display:flex;gap:9px;margin-bottom:13px}.field{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:11px;background:var(--surface);color:var(--text);outline:none}.field:focus{border-color:var(--primary);box-shadow:0 0 0 3px #2563eb20}.toolbar select{max-width:155px}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.product{border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:7px;min-width:0}.product .emoji{font-size:26px}.product strong{font-size:14px;line-height:1.3}.muted{color:var(--muted);font-size:12px}.price{font-weight:800;color:var(--primary)}.product button{margin-top:auto;width:100%}.cart-list{display:flex;flex-direction:column;gap:10px;max-height:340px;overflow:auto}.cart-item{display:grid;grid-template-columns:1fr auto;gap:7px;border-bottom:1px solid var(--line);padding-bottom:10px}.cart-item:last-child{border:0}.qty{display:flex;align-items:center;gap:7px}.qty button{width:28px;height:28px;border:1px solid var(--line);background:var(--surface);border-radius:8px}.summary{border-top:1px solid var(--line);margin-top:12px;padding-top:12px;display:grid;gap:9px}.sumrow{display:flex;justify-content:space-between;font-size:14px}.sumrow.total{font-size:18px;font-weight:850}.paybox{display:grid;gap:9px;margin-top:12px}.paybox .btn{width:100%;padding:13px}.empty{text-align:center;color:var(--muted);padding:28px 8px}.section{display:none}.section.active{display:block}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}.stat{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:15px}.stat span{font-size:12px;color:var(--muted)}.stat strong{display:block;font-size:20px;margin-top:5px}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid var(--line);white-space:nowrap}th{color:var(--muted);font-weight:650}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form-grid label{font-size:12px;color:var(--muted);display:grid;gap:5px}.form-grid .full{grid-column:1/-1}.form-actions{display:flex;gap:8px;margin-top:12px}.receipt{max-width:420px;margin:0 auto;border:1px dashed var(--muted);padding:18px;background:var(--surface);font-family:monospace}.receipt h3,.receipt p{text-align:center;margin:4px}.receipt table{font-family:monospace}.receipt td,.receipt th{padding:6px 2px}.notice{font-size:12px;color:var(--muted);margin-top:12px}.bottom-nav{display:none}.hidden{display:none!important}
+@media(max-width:800px){.app{padding:13px 12px 90px}.layout{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.cart-panel{position:static}.stats{grid-template-columns:1fr 1fr}.topbar{align-items:flex-start}.brand h1{font-size:17px}.top-actions .btn{padding:9px 10px}.bottom-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--line);justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:10}.bottom-nav button{border:0;background:transparent;color:var(--muted);font-size:11px;display:grid;gap:3px;justify-items:center}.bottom-nav button.active{color:var(--primary);font-weight:800}.bottom-nav span{font-size:19px}.tabs{display:none}}
+@media(max-width:390px){.products{gap:8px}.product{padding:10px}.stats{grid-template-columns:1fr 1fr}.stat strong{font-size:17px}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}}
+body.dark{--bg:#101827;--surface:#182235;--text:#edf2fb;--muted:#a5b1c4;--line:#2b3a52;--shadow:0 8px 24px rgba(0,0,0,.18)}body.dark .tab.active{background:#203c69;color:#bfdbfe;border-color:#31588e}body.dark .logo{background:#263c61}
+@media print{body *{visibility:hidden!important}#receiptArea,#receiptArea *{visibility:visible!important}#receiptArea{position:absolute;left:0;top:0;width:100%;border:0}}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="topbar">
+  <div class="brand"><div class="logo">🛒</div><div><h1>Alya Stationery</h1><p>Kasir Toko Kelontong • XI RPL</p></div></div>
+  <div class="top-actions"><button class="btn secondary" id="darkBtn" type="button">🌙 Tema</button></div>
+</header>
+<nav class="tabs" aria-label="Navigasi utama">
+  <button class="tab active" data-page="kasir">🛍️ Kasir</button><button class="tab" data-page="riwayat">🧾 Riwayat</button><button class="tab" data-page="produk">📦 Produk</button><button class="tab" data-page="laporan">📊 Laporan</button>
+</nav>
+
+<main>
+<section class="section active" id="page-kasir">
+  <div class="layout">
+    <div class="panel">
+      <h2>Daftar Produk</h2>
+      <div class="toolbar"><input id="search" class="field" placeholder="Cari nama produk..." aria-label="Cari produk"><select id="categoryFilter" class="field" aria-label="Filter kategori"><option value="">Semua kategori</option></select></div>
+      <div id="productGrid" class="products"></div>
+    </div>
+    <aside class="panel cart-panel">
+      <h2>🧺 Keranjang Belanja <span class="muted" id="cartCount"></span></h2>
+      <div id="cartList" class="cart-list"></div>
+      <div class="summary">
+        <div class="sumrow"><span>Subtotal</span><strong id="subtotal">Rp0</strong></div>
+        <div class="sumrow"><label for="discount">Diskon (Rp)</label><input id="discount" class="field" type="number" min="0" value="0" style="width:120px;padding:6px"></div>
+        <div class="sumrow"><span>Total bayar</span><strong class="price" id="total">Rp0</strong></div>
+      </div>
+      <div class="paybox"><label class="muted" for="cash">Uang diterima (Rp)</label><input id="cash" class="field" type="number" min="0" placeholder="Masukkan uang pembayaran"><div class="sumrow"><span>Kembalian</span><strong id="change">Rp0</strong></div><div id="payMessage" class="muted" role="status"></div><button class="btn" id="checkoutBtn">Selesaikan Transaksi</button><button class="btn secondary" id="clearCartBtn">Kosongkan Keranjang</button></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="page-riwayat">
+  <div class="panel"><h2>Riwayat Transaksi</h2><div id="historyList"></div></div>
+</section>
+
+<section class="section" id="page-produk">
+  <div class="panel">
+    <h2>Kelola Produk</h2>
+    <form id="productForm">
+      <input type="hidden" id="editId">
+      <div class="form-grid">
+        <label>Nama produk<input class="field" id="pName" required maxlength="45" placeholder="Contoh: Mi instan"></label>
+        <label>Harga (Rp)<input class="field" id="pPrice" type="number" min="1" required placeholder="3500"></label>
+        <label>Kategori<input class="field" id="pCategory" required maxlength="25" placeholder="Makanan"></label>
+        <label>Stok<input class="field" id="pStock" type="number" min="0" value="20" required></label>
+        <label class="full">Ikon/emoji<input class="field" id="pEmoji" maxlength="4" value="📦" placeholder="📦"></label>
+      </div>
+      <div class="form-actions"><button class="btn" type="submit" id="saveProductBtn">Tambah Produk</button><button class="btn secondary" type="button" id="cancelEditBtn">Batal</button></div>
+    </form>
+    <div class="table-wrap" style="margin-top:18px"><table><thead><tr><th>Produk</th><th>Harga</th><th>Stok</th><th>Aksi</th></tr></thead><tbody id="manageProducts"></tbody></table></div>
+  </div>
+</section>
+
+<section class="section" id="page-laporan">
+  <div class="stats"><div class="stat"><span>Pendapatan hari ini</span><strong id="todayRevenue">Rp0</strong></div><div class="stat"><span>Transaksi hari ini</span><strong id="todayCount">0</strong></div><div class="stat"><span>Produk tersedia</span><strong id="stockCount">0</strong></div></div>
+  <div class="panel"><h2>Ringkasan Penjualan Hari Ini</h2><p class="muted" id="reportDate"></p><div id="reportDetails" class="muted">Belum ada transaksi hari ini.</div></div>
+</section>
+
+<section class="section" id="page-struk">
+  <div class="panel"><h2>Struk Transaksi</h2><div id="receiptArea"></div><div class="form-actions" style="justify-content:center"><button class="btn" onclick="window.print()">Cetak Struk</button><button class="btn secondary" id="backCashier">Kembali ke Kasir</button></div></div>
+</section>
+</main>
+</div>
+<nav class="bottom-nav" aria-label="Navigasi bawah">
+ <button class="active" data-page="kasir"><span>🛍️</span>Kasir</button><button data-page="riwayat"><span>🧾</span>Riwayat</button><button data-page="produk"><span>📦</span>Produk</button><button data-page="laporan"><span>📊</span>Laporan</button>
+</nav>
+
+<script>
+// Data awal toko. Data berikutnya disimpan di localStorage browser.
+const starterProducts = [
+ {id:1,name:"Beras 1 kg",price:15000,category:"Sembako",stock:30,emoji:"🍚"},
+ {id:2,name:"Minyak goreng 1 L",price:18000,category:"Sembako",stock:25,emoji:"🛢️"},
+ {id:3,name:"Gula pasir 1 kg",price:17000,category:"Sembako",stock:20,emoji:"🍬"},
+ {id:4,name:"Telur 1 kg",price:28000,category:"Sembako",stock:18,emoji:"🥚"},
+ {id:5,name:"Mi instan",price:3500,category:"Makanan",stock:60,emoji:"🍜"},
+ {id:6,name:"Kopi sachet",price:2000,category:"Minuman",stock:50,emoji:"☕"},
+ {id:7,name:"Teh celup",price:8000,category:"Minuman",stock:22,emoji:"🫖"},
+ {id:8,name:"Air mineral 600 ml",price:4000,category:"Minuman",stock:40,emoji:"💧"},
+ {id:9,name:"Susu UHT  kotak",price:6500,category:"Minuman",stock:24,emoji:"🥛"},
+ {id:10,name:"Sabun mandi",price:5000,category:"Perawatan",stock:28,emoji:"🧼"},
+ {id:11,name:"Pasta gigi",price:12000,category:"Perawatan",stock:15,emoji:"🪥"},
+ {id:12,name:"Biskuit",price:7000,category:"Makanan",stock:32,emoji:"🍪"}
+];
+const KEY_PRODUCTS="alyaStationery_products_v1", KEY_SALES="alyaStationery_sales_v1";
+let products=JSON.parse(localStorage.getItem(KEY_PRODUCTS)||"null")||starterProducts;
+let sales=JSON.parse(localStorage.getItem(KEY_SALES)||"[]");
+let cart={}, lastReceipt=null;
+const $=id=>document.getElementById(id);
+const rupiah=n=>"Rp"+Number(n||0).toLocaleString("id-ID");
+const save=()=>{localStorage.setItem(KEY_PRODUCTS,JSON.stringify(products));localStorage.setItem(KEY_SALES,JSON.stringify(sales));};
+const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function showPage(page){
+ document.querySelectorAll(".section").forEach(x=>x.classList.remove("active"));
+ const target=$("page-"+page); if(target)target.classList.add("active");
+ document.querySelectorAll("[data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===page));
+ if(page==="riwayat")renderHistory(); if(page==="produk")renderManage(); if(page==="laporan")renderReport();
+}
+document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+$("backCashier").addEventListener("click",()=>showPage("kasir"));
+function renderCategories(){
+ const sel=$("categoryFilter"), current=sel.value;
+ const cats=[...new Set(products.map(p=>p.category))].sort();
+ sel.innerHTML='<option value="">Semua kategori</option>'+cats.map(c=>`<option value="${safe(c)}">${safe(c)}</option>`).join("");
+ sel.value=cats.includes(current)?current:"";
+}
+function renderProducts(){
+ renderCategories(); const q=$("search").value.toLowerCase(), cat=$("categoryFilter").value;
+ const filtered=products.filter(p=>p.name.toLowerCase().includes(q)&&(!cat||p.category===cat));
+ $("productGrid").innerHTML=filtered.length?filtered.map(p=>`<article class="product"><div class="emoji">${safe(p.emoji||"📦")}</div><strong>${safe(p.name)}</strong><span class="muted">${safe(p.category)} • Stok: ${p.stock}</span><span class="price">${rupiah(p.price)}</span><button class="btn small" data-add="${p.id}" ${p.stock<=0?"disabled":""}>${p.stock<=0?"Stok habis":"+ Tambah"}</button></article>`).join(""):'<div class="empty">Produk tidak ditemukan.</div>';
+ document.querySelectorAll("[data-add]").forEach(b=>b.addEventListener("click",()=>addToCart(Number(b.dataset.add))));
+}
+function addToCart(id){const p=products.find(x=>x.id===id);if(!p||p.stock<=0)return;const current=cart[id]?.qty||0;if(current>=p.stock){alert("Jumlah melebihi stok yang tersedia.");return;}cart[id]={qty:current+1};renderCart();}
+function renderCart(){
+ const entries=Object.entries(cart).map(([id,v])=>({p:products.find(p=>p.id===Number(id)),qty:v.qty})).filter(x=>x.p);
+ $("cartCount").textContent=`(${entries.reduce((a,x)=>a+x.qty,0)} item)`;
+ $("cartList").innerHTML=entries.length?entries.map(({p,qty})=>`<div class="cart-item"><div><strong>${safe(p.name)}</strong><div class="muted">${rupiah(p.price)} × ${qty}</div></div><div class="qty"><button data-minus="${p.id}" aria-label="Kurangi">−</button><strong>${qty}</strong><button data-plus="${p.id}" aria-label="Tambah">+</button><button data-remove="${p.id}" aria-label="Hapus" style="color:#dc2626">×</button></div></div>`).join(""):'<div class="empty">Keranjang masih kosong.</div>';
+ document.querySelectorAll("[data-minus]").forEach(b=>b.onclick=()=>changeQty(Number(b.dataset.minus),-1));
+ document.querySelectorAll("[data-plus]").forEach(b=>b.onclick=()=>changeQty(Number(b.dataset.plus),1));
+ document.querySelectorAll("[data-remove]").forEach(b=>b.onclick=()=>{delete cart[b.dataset.remove];renderCart();});
+ const subtotal=entries.reduce((a,x)=>a+x.p.price*x.qty,0),discount=Math.max(0,Math.min(Number($("discount").value)||0,subtotal)),total=subtotal-discount;
+ $("subtotal").textContent=rupiah(subtotal);$("total").textContent=rupiah(total);updateChange();
+}
+function changeQty(id,delta){const p=products.find(x=>x.id===id),next=(cart[id]?.qty||0)+delta;if(next<=0)delete cart[id];else if(next<=p.stock)cart[id].qty=next;else alert("Stok tidak mencukupi.");renderCart();}
+function updateChange(){
+ const sub=Object.entries(cart).reduce((a,[id,v])=>a+(products.find(p=>p.id===Number(id))?.price||0)*v.qty,0);
+ const total=sub-Math.min(Math.max(0,Number($("discount").value)||0),sub),cash=Number($("cash").value)||0;
+ $("change").textContent=rupiah(Math.max(0,cash-total));
+ $("payMessage").textContent=cash>0&&cash<total?"Uang pembayaran masih kurang.":(cash>=total&&total>0?"Uang pembayaran cukup.":"");
+}
+function checkout(){
+ const entries=Object.entries(cart).map(([id,v])=>({p:products.find(p=>p.id===Number(id)),qty:v.qty})).filter(x=>x.p);
+ if(!entries.length){alert("Keranjang masih kosong.");return;}
+ const subtotal=entries.reduce((a,x)=>a+x.p.price*x.qty,0),discount=Math.min(Math.max(0,Number($("discount").value)||0),subtotal),total=subtotal-discount,cash=Number($("cash").value)||0;
+ if(cash<total){alert("Uang pembayaran kurang. Periksa kembali.");return;}
+ if(!confirm("Selesaikan transaksi dengan total "+rupiah(total)+"?"))return;
+ entries.forEach(x=>x.p.stock-=x.qty);
+ const now=new Date(),sale={id:Date.now(),date:now.toISOString(),items:entries.map(x=>({name:x.p.name,price:x.p.price,qty:x.qty})),subtotal,discount,total,cash,change:cash-total};
+ sales.unshift(sale);lastReceipt=sale;save();cart={};$("cash").value="";$("discount").value="0";renderAll();renderReceipt(sale);showPage("struk");
+}
+function renderReceipt(s){
+ const d=new Date(s.date);
+ $("receiptArea").innerHTML=`<div class="receipt"><h3>ALYA STATIONERY</h3><p>Toko Kelontong</p><p>${d.toLocaleDateString("id-ID")} ${d.toLocaleTimeString("id-ID")}</p><hr><table><tbody>${s.items.map(i=>`<tr><td colspan="2">${safe(i.name)}</td></tr><tr><td>${i.qty} x ${rupiah(i.price)}</td><td style="text-align:right">${rupiah(i.qty*i.price)}</td></tr>`).join("")}</tbody></table><hr><div class="sumrow"><span>Subtotal</span><strong>${rupiah(s.subtotal)}</strong></div><div class="sumrow"><span>Diskon</span><strong>${rupiah(s.discount)}</strong></div><div class="sumrow"><strong>TOTAL</strong><strong>${rupiah(s.total)}</strong></div><div class="sumrow"><span>Bayar</span><strong>${rupiah(s.cash)}</strong></div><div class="sumrow"><span>Kembalian</span><strong>${rupiah(s.change)}</strong></div><hr><p>Terima kasih telah berbelanja!</p><p>Barang yang sudah dibeli tidak dapat ditukar.</p></div>`;
+}
+function renderHistory(){
+ $("historyList").innerHTML=sales.length?`<div class="table-wrap"><table><thead><tr><th>Tanggal</th><th>Item</th><th>Total</th><th>Aksi</th></tr></thead><tbody>${sales.map(s=>`<tr><td>${new Date(s.date).toLocaleString("id-ID")}</td><td>${s.items.reduce((a,i)=>a+i.qty,0)} item</td><td>${rupiah(s.total)}</td><td><button class="btn secondary small" data-receipt="${s.id}">Lihat struk</button></td></tr>`).join("")}</tbody></table></div>`:'<div class="empty">Belum ada transaksi tersimpan.</div>';
+ document.querySelectorAll("[data-receipt]").forEach(b=>b.onclick=()=>{const s=sales.find(x=>x.id===Number(b.dataset.receipt));renderReceipt(s);showPage("struk");});
+}
+function renderManage(){
+ $("manageProducts").innerHTML=products.map(p=>`<tr><td>${safe(p.emoji)} ${safe(p.name)}<div class="muted">${safe(p.category)}</div></td><td>${rupiah(p.price)}</td><td>${p.stock}</td><td><button class="btn secondary small" data-edit="${p.id}">Edit</button> <button class="btn danger small" data-delete="${p.id}">Hapus</button></td></tr>`).join("");
+ document.querySelectorAll("[data-edit]").forEach(b=>b.onclick=()=>editProduct(Number(b.dataset.edit)));
+ document.querySelectorAll("[data-delete]").forEach(b=>b.onclick=()=>deleteProduct(Number(b.dataset.delete)));
+}
+function editProduct(id){const p=products.find(x=>x.id===id);if(!p)return;$("editId").value=p.id;$("pName").value=p.name;$("pPrice").value=p.price;$("pCategory").value=p.category;$("pStock").value=p.stock;$("pEmoji").value=p.emoji;$("saveProductBtn").textContent="Simpan Perubahan";window.scrollTo({top:0,behavior:"smooth"});}
+function resetProductForm(){$("productForm").reset();$("editId").value="";$("pStock").value=20;$("pEmoji").value="📦";$("saveProductBtn").textContent="Tambah Produk";}
+$("productForm").addEventListener("submit",e=>{e.preventDefault();const id=Number($("editId").value),data={name:$("pName").value.trim(),price:Number($("pPrice").value),category:$("pCategory").value.trim(),stock:Number($("pStock").value),emoji:$("pEmoji").value.trim()||"📦"};if(!data.name||!data.category||data.price<=0||data.stock<0)return alert("Periksa data produk.");if(id){Object.assign(products.find(p=>p.id===id),data);}else{data.id=Date.now();products.push(data);}save();resetProductForm();renderAll();renderManage();});
+$("cancelEditBtn").onclick=resetProductForm;
+function deleteProduct(id){const p=products.find(x=>x.id===id);if(!p)return;if(!confirm(`Hapus produk ${p.name}?`))return;products=products.filter(x=>x.id!==id);delete cart[id];save();renderAll();renderManage();}
+function renderReport(){
+ const today=new Date().toLocaleDateString("id-ID"),todaySales=sales.filter(s=>new Date(s.date).toLocaleDateString("id-ID")===today);
+ $("todayRevenue").textContent=rupiah(todaySales.reduce((a,s)=>a+s.total,0));$("todayCount").textContent=todaySales.length;$("stockCount").textContent=products.reduce((a,p)=>a+p.stock,0);$("reportDate").textContent="Tanggal: "+today;
+ $("reportDetails").textContent=todaySales.length?`${todaySales.reduce((a,s)=>a+s.items.reduce((n,i)=>n+i.qty,0),0)} barang terjual dari ${todaySales.length} transaksi.`:"Belum ada transaksi hari ini.";
+}
+function renderAll(){renderProducts();renderCart();renderManage();renderReport();}
+$("search").addEventListener("input",renderProducts);$("categoryFilter").addEventListener("change",renderProducts);$("discount").addEventListener("input",updateChange);$("cash").addEventListener("input",updateChange);$("checkoutBtn").addEventListener("click",checkout);
+$("clearCartBtn").addEventListener("click",()=>{if(confirm("Kosongkan semua isi keranjang?")){cart={};renderCart();}});
+$("darkBtn").addEventListener("click",()=>{document.body.classList.toggle("dark");localStorage.setItem("alyaStationery_dark",document.body.classList.contains("dark")?"1":"0");});
+if(localStorage.getItem("alyaStationery_dark")==="1")document.body.classList.add("dark");
+renderAll();
+</script>
+</body>
+</html>
